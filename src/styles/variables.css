@@ -1,0 +1,5 @@
+:root {
+    --border-radius-ui: 0.625rem;
+    --border-radius-display: var(--border-radius-ui);
+    --border-radius-keyboard: var(--border-radius-ui);
+}

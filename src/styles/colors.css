@@ -1,0 +1,125 @@
+:root {
+    --color-white: white;
+    --color-black: black;
+
+    --color-purple-950: rgb(23, 6, 42);
+    --color-purple-900: rgb(30, 9, 54);
+    --color-purple-850: rgb(51, 28, 77);
+    --color-purple-800: rgb(86, 7, 124);
+    --color-purple-700: rgb(108, 52, 172);
+    --color-purple-650: rgb(134, 49, 175);
+
+    --color-navy-950: rgb(24, 31, 51);
+    --color-navy-900: rgb(36, 45, 68);
+    --color-navy-850: rgb(58, 70, 99);
+    --color-navy-750: rgb(67, 74, 89);
+    --color-navy-700: rgb(100, 113, 152);
+    --color-navy-400: rgb(162, 178, 225);
+
+    --color-gray-900: rgb(54, 54, 44);
+    --color-gray-300: rgb(210, 205, 205);
+    --color-gray-200: rgb(230, 230, 230);
+    --color-gray-100: rgb(238, 238, 238);
+
+    --color-blue-950: rgb(26, 35, 39);
+    --color-blue-500: rgb(55, 129, 135);
+    --color-blue-400: rgb(98, 181, 188);
+
+    --color-red-600: rgb(208, 63, 47);
+    --color-red-400: rgb(249, 107, 91);
+
+    --color-orange-700: rgb(200, 84, 2);
+    --color-orange-400: rgb(255, 138, 56);
+
+    --color-cyan-500: rgb(0, 222, 208);
+    --color-cyan-200: rgb(147, 255, 248);
+
+    --color-yellow-300: rgb(255, 229, 61);
+}
+
+.theme {
+    background-color: var(--color-body-bg);
+    color: var(--color-body);
+}
+
+.theme[data-theme='0'] {
+    --color-body: var(--color-white);
+    --color-body-bg: var(--color-navy-850);
+
+    --color-display-bg: var(--color-navy-950);
+    --color-display: var(--color-white);
+    --color-keyboard-bg: var(--color-navy-900);
+    --color-switcher-bg: var(--color-navy-900);
+    --color-switcher-radio-bg: var(--color-orange-700);
+
+    --color-keybutton-primary: var(--color-navy-750);
+    --color-keybutton-bg-primary: var(--color-gray-200);
+    --color-keybutton-primary-shadow: #b3a497;
+    --color-keybutton-primary-active: var(--color-white);
+
+    --color-keybutton-secondary: var(--color-white);
+    --color-keybutton-bg-secondary: var(--color-blue-500);
+    --color-keybutton-secondary-shadow: #414e73;
+    --color-keybutton-secondary-active: var(--color-navy-400);
+
+    --color-keybutton-accent: var(--color-white);
+    --color-keybutton-bg-accent: var(--color-red-600);
+    --color-keybutton-accent-shadow: #93261a;
+    --color-keybutton-accent-active: var(--color-red-400);
+}
+
+.theme[data-theme='1'] {
+    --color-body: var(--color-gray-900);
+    --color-body-bg: var(--color-gray-200);
+
+    --color-display-bg: var(--color-gray-100);
+    --color-display: var(--color-gray-900);
+    --color-keyboard-bg: var(--color-gray-300);
+    --color-switcher-bg: var(--color-gray-300);
+    --color-switcher-radio-bg: var(--color-orange-700);
+
+    --color-keybutton-primary: var(--color-gray-900);
+    --color-keybutton-bg-primary: var(--color-gray-200);
+    --color-keybutton-primary-shadow: rgb(167, 158, 145);
+    --color-keybutton-primary-active: var(--color-white);
+
+    --color-keybutton-secondary: var(--color-white);
+    --color-keybutton-bg-secondary: var(--color-blue-500);
+    --color-keybutton-secondary-shadow: rgb(27, 96, 102);
+    --color-keybutton-secondary-active: var(--color-blue-400);
+
+    --color-keybutton-accent: var(--color-white);
+    --color-keybutton-bg-accent: var(--color-orange-700);
+    --color-keybutton-accent-shadow: rgb(135, 57, 1);
+    --color-keybutton-accent-active: var(--color-orange-400);
+}
+
+.theme[data-theme='2'] {
+    --color-body: var(--color-yellow-300);
+    --color-body-bg: var(--color-purple-950);
+
+    --color-display-bg: var(--color-purple-900);
+    --color-display: var(--color-yellow-300);
+    --color-keyboard-bg: var(--color-purple-900);
+    --color-switcher-bg: var(--color-purple-900);
+    --color-switcher-radio-bg: var(--color-cyan-500);
+
+    --color-keybutton-primary: var(--color-yellow-300);
+    --color-keybutton-bg-primary: var(--color-purple-850);
+    --color-keybutton-primary-shadow: #881c9e;
+    --color-keybutton-primary-active: var(--color-purple-700);
+
+    --color-keybutton-secondary: var(--color-white);
+    --color-keybutton-bg-secondary: var(--color-purple-800);
+    --color-keybutton-secondary-shadow: #be15f4;
+    --color-keybutton-secondary-active: var(--color-purple-650);
+
+    --color-keybutton-accent: var(--color-blue-950);
+    --color-keybutton-bg-accent: var(--color-cyan-500);
+    --color-keybutton-accent-shadow: #6cf9f1;
+    --color-keybutton-accent-active: var(--color-cyan-200);
+}
+
+.transition-color {
+    transition: color 0.5s, background-color 0.5s;
+}
