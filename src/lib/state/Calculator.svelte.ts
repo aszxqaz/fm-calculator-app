@@ -14,14 +14,13 @@ export interface Formatter {
 
 class DefaultFormatter implements Formatter {
   format(input: string): string {
-    const parts = input.split('.');
+    const int = input.match(/^-?(?<int>\d+)(\.\d*)?$/)!.groups!.int;
     let split = [];
-    for (let i = parts[0].length; i > 0; i -= 3) {
-      split.unshift(parts[0].substring(i - 3, i));
+    for (let i = int.length; i > 0; i -= 3) {
+      split.unshift(int.substring(i - 3, i));
     }
-    return (
-      split.join(',') + (typeof parts[1] != 'undefined' ? `.${parts[1]}` : '')
-    );
+    const fmtd = split.join(',');
+    return input.replace(int, fmtd);
   }
 }
 
