@@ -19,7 +19,9 @@ class DefaultFormatter implements Formatter {
     for (let i = parts[0].length; i > 0; i -= 3) {
       split.unshift(parts[0].substring(i - 3, i));
     }
-    return split.join(',') + parts[1];
+    return (
+      split.join(',') + (typeof parts[1] != 'undefined' ? `.${parts[1]}` : '')
+    );
   }
 }
 
