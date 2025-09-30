@@ -43,6 +43,7 @@
     --padding-inline: clamp(1.5rem, -3.87rem + 22.9vw, 7.125rem);
 
     height: 100vh;
+    overflow-x: clip;
     display: grid;
 
     grid-template-columns: var(--padding-inline) 1fr var(--padding-inline);
